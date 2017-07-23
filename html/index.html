@@ -1,0 +1,26 @@
+<!DOCTYPE html/>
+<html lang="en-us">
+	<meta charset="utf-8"/>
+	<head>
+		<title>Graph Render</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+	<body>
+		<div id="graph_and_inputs">
+			<div id="graph">
+				<canvas id="canvas_graph" width="512" height="512">Your browser does not support HTML5 canvas!</canvas>
+			</div>
+			<div id="inputs">
+				<input id="input_cells" type="range" min="2" max="64" step="2" value="16">Cells: </input><span id="input_cells_text"></span>
+				<input id="input_line_size" type="range" min="1" max="10" step="1" value="5">Line Size: </input><span id="input_line_size_text"></span>
+			</div>
+		</div>
+		<div id="function_editor">
+			<!--<span>funtion graph_function(n) {</span><br/><span id="function_editor_return">return</span>-->
+			<textarea id="input_function" rows="12" cols="40">sin((time * 0.3 + n) * 0.1) * cells * 0.5</textarea>
+			<!--<span>;</span><br/><span>}</span>-->
+		</div>
+	</body>
+	<script src="../js/math_wrapper.js"></script>
+	<script src="../js/main.js"></script>
+</html>
