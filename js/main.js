@@ -104,6 +104,7 @@
 	function draw_line() {
 		ctx.beginPath();
 		ctx.strokeStyle = "#f00";
+		ctx.lineWidth = line_size;
 
 		const last = {
 			x: 0,
